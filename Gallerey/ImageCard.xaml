@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Gallerey.ImageCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gallerey"
+             mc:Ignorable="d" 
+             d:DesignHeight="NaN" Padding="0" d:DesignWidth="NaN" ContextMenuOpening="UserControl_ContextMenuOpening">
+    <Grid>
+        <Image x:Name="ImageElement" Height="200" Width="200" MouseLeftButtonDown="ImageElement_MouseLeftButtonDown" Margin="10 10 10 20"/>
+        <TextBlock x:Name="ImageName" Margin="0 210 0 0" Width="200" Height="20" TextAlignment="Center" Foreground="#FFDADADA">DefaultName</TextBlock>
+    </Grid>
+</UserControl>

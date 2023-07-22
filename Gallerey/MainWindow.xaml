@@ -1,0 +1,27 @@
+﻿<Window x:Class="Gallerey.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        MinHeight="300"
+        MinWidth="600"
+        xmlns:local="clr-namespace:Gallerey"
+        mc:Ignorable="d"
+        Title="Gallery" Height="482" Width="900" Background="#FF191818">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ImageFolders" Grid.Column="0" Grid.Row="1" Background="#FF292525" BorderBrush="#FF1D1F1F">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить папку" Click="AddFolder"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+        <ScrollViewer Grid.Column="1">
+            <WrapPanel Grid.Column="1" x:Name="imageWrapPanel" Orientation="Horizontal"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
